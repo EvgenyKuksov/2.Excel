@@ -375,16 +375,16 @@ object Form1: TForm1
   object Label1: TLabel
     Left = 88
     Top = 155
-    Width = 10
+    Width = 12
     Height = 13
-    Caption = 'Xf'
+    Caption = 'Xn'
   end
   object Label2: TLabel
     Left = 88
     Top = 182
-    Width = 8
+    Width = 11
     Height = 13
-    Caption = 'Xl'
+    Caption = 'Xk'
   end
   object Label3: TLabel
     Left = 88
@@ -402,7 +402,6 @@ object Form1: TForm1
     Caption = 'Go!'
     TabOrder = 0
     OnClick = Button1Click
-    ExplicitTop = 325
   end
   object Edit1: TEdit
     Left = 115

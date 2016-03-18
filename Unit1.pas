@@ -56,6 +56,7 @@ if Xn < Xk then
     Sheet := ExcelApp.Workbooks[1].WorkSheets[1] as ExcelWorksheet;
     ExcelApp.Application.ReferenceStyle[0] := xlA1;
 
+
     //  Задаю значения "X"
     col:='A';
     x:=Xn;
@@ -89,6 +90,8 @@ if Xn < Xk then
   ExcelApp.Application.ActiveWorkbook.ActiveChart.SetElement(1);
   ExcelApp.Application.ActiveWorkbook.ActiveChart.ChartTitle[0].Text:='График функции';
   MyDisp:=mchart.Axes(xlValue, xlPrimary, 0);
+  ExcelApp.Application.ActiveWorkbook.ActiveChart.Legend[0].Delete; //удаление легенды
+
 
      mAxis:=Axis(MyDisp);
      mAxis.HasTitle:=True;
